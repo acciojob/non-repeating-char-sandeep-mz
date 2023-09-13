@@ -1,6 +1,10 @@
 function firstNonRepeatedChar(str) {
+    let charFrequency = {};
     for (let char of str) {
-        if (str.indexOf(char) === str.lastIndexOf(char)) {
+        charFrequency[char] = (charFrequency[char] || 0) + 1;
+    }
+    for (let char of str) {
+        if (charFrequency[char] === 1) {
             return char;
         }
     }
@@ -15,4 +19,3 @@ if (result !== null) {
 } else {
     alert("There is no non-repeated character in the given string.");
 }
-
