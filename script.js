@@ -8,13 +8,8 @@ function firstNonRepeatedChar(str) {
             return char;
         }
     }
-    return null;
-       
+    return null;   
    }
    const input = prompt("Enter a string");
    alert(firstNonRepeatedChar(input)); 
-   if(result !== null){
-    alert('The first non-repeated character is: $(result)');
-   }else{
-    alert("The first non-repeated character in the given string");
-   }
+   
